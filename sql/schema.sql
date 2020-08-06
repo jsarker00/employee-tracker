@@ -6,40 +6,40 @@ USE employees_db;
 
 CREATE TABLE employee
 (
+  id INT NOT NULL
+  AUTO_INCREMENT,
+  first_name VARCHAR
+  (30) NOT NULL,
+  last_name VARCHAR
+  (30) NOT NULL,
+ role_id INT
+  (30) NOT NULL,
+ manager_id INT
+  (30),
+PRIMARY KEY
+  (id)
+);
+
+  CREATE TABLE department
+  (
     id INT NOT NULL
     AUTO_INCREMENT,
-  first_name VARCHAR
-    (20) NOT NULL,
-  last_name VARCHAR
-    (20) NOT NULL,
- role_id INT
-    (20) NOT NULL,
- manager_id INT
-    (20),
+  department_name VARCHAR
+    (30) NOT NULL,
 PRIMARY KEY
     (id)
 );
 
-    CREATE TABLE department
+    CREATE TABLE role
     (
-        id INT NOT NULL
-        AUTO_INCREMENT,
-  department_name VARCHAR
-        (20) NOT NULL,
-PRIMARY KEY
-        (id)
-);
-
-        CREATE TABLE role
-        (
-            id INT NOT NULL
-            AUTO_INCREMENT,
+      id INT NOT NULL
+      AUTO_INCREMENT,
   title VARCHAR
-            (20) NOT NULL,
+      (30) NOT NULL,
   salary DECIMAL
-            (7,2) NOT NULL,
+      (30,10) NOT NULL,
  department_id INT
-            (20),
+      (30),
 PRIMARY KEY
-            (id)
+      (id)
 );

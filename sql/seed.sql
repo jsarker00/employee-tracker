@@ -16,10 +16,10 @@ VALUES
     ("Lawyer", 150000.00, 4);
 INSERT INTO employee
     (first_name, last_name, role_id, manager_id)
-VALUES("Ange", "Hydrangea", 1, null),
-    ("Lana", "Rose", 2, 1),
-    ("Ari", "Daffodil", 3, 2),
-    ("Anna", "Carnation", 4, null);
+VALUES("Tanmay", "Sarker", 1, null),
+    ("Joy", "Rai", 2, 1),
+    ("Lana", "Svetlana", 3, 2),
+    ("Sathi", "Sarker", 4, null);
 SELECT first_name, last_name, title, salary, department_name
 from employee
     INNER JOIN role on employee.role_id = role.id
@@ -31,3 +31,5 @@ select *
 from role;
 select *
 from employee;
+
+
