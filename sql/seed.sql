@@ -18,7 +18,7 @@ INSERT INTO employee
     (first_name, last_name, role_id, manager_id)
 VALUES("Tanmay", "Sarker", 1, null),
     ("Joy", "Rai", 2, 1),
-    ("Lana", "Svetlana", 3, 2),
+    ("Bananna", "Svetlana", 3, 2),
     ("Sathi", "Sarker", 4, null);
 SELECT first_name, last_name, title, salary, department_name
 from employee
